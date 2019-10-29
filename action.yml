@@ -1,5 +1,5 @@
 
-name: 'Execute sed'
+name: 'Edit files with sed'
 description: "Use sed on specific files in your repository"
 inputs:
   sed-script:
