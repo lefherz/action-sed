@@ -1,0 +1,17 @@
+
+name: 'Execute sed'
+description: "Use sed on specific files in your repository"
+inputs:
+  sed-script:
+    desciption: "The script you want to execute. (sed -e)"
+    required: true
+  file:
+    description: "The file(s) you want to edit."
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.sed-script }}
+    - ${{ inputs.file }}
+
