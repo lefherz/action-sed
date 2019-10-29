@@ -2,6 +2,8 @@
 
 This GitHub action exposes the sed command for use in building/archiving.
 
+**Note: doesn't work (yet).
+
 ## Usage
 
 An example action config is displayed below:
